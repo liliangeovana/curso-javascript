@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naturalidade</title>
+</head>
+<body>
+    <h1>Estrangeiro ou Brasileiro?</h1>
+    <label for="txtpais">De onde você é?</label>
+    <select name="selectpais" id="selectpais">
+        <option value="EUA">EUA</option>
+        <option value="BRA">BRA</option>
+        <option value="FRA">FRA</option>
+    </select>
+    <br>
+    <input type="submit" value="Conferir" onclick="conferir()">
+
+    <p>Você é: 
+        <span id="res">
+
+        </span>
+    </p>
+
+    <script>
+        function conferir(){
+            var pais = document.querySelector('select#selectpais').value
+            var res = document.querySelector('span#res')
+           
+            if (pais != 'BRA'){
+                res.innerHTML = 'Estrangeiro'
+            }else{
+                res.innerHTML = 'Brasileiro!'
+            }
+
+            
+            
+        }
+    </script>
+
+</body>
+</html>
