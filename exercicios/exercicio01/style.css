@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:rgba(249, 224, 134, 0.589);
+}
+
+h1#titulo{
+   text-align: center;
+   color: white;
+   text-shadow: rgba(0, 0, 0, 0.429) 1px 3px 5px;
+}
+
+section{
+    height: 300px;
+    width: 500px;
+    margin: auto;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.409);
+}
+
+div#hora{
+    text-align: center;
+    font-size: 1.2em;
+    padding: 20px;
+    font-weight: bold;
+}
+
+div#imagem{
+    margin: auto;
+    width: 200px;
+    height: 200px;
+}
+
+img {
+    border-radius: 50%;
+    width: 220px;
+    height: 210px;
+}
+
+p#rodape {
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
